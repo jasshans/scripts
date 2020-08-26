@@ -10,7 +10,7 @@ function createSaleIdDiv(saleId) {
     } else if (url.indexOf('staging') >= 0 || url.indexOf('uat') >= 0) {
         a.href = protocol + '//' + url + '/cms/sale/edit/' + saleId;
     } else {
-        a.href = 'https://cms.secretescapes.com/sale/edit/' + A + saleId;
+        a.href = 'https://cms.secretescapes.com/sale/edit/' + saleId;
     }
 
     //Info displayed
