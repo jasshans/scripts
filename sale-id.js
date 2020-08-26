@@ -1,4 +1,6 @@
 function createSaleIdDiv(saleId) {
+
+    //Create link
 	var protocol = window.location.protocol;
 	var url = window.location.hostname;
 	var a = document.createElement('a');
@@ -10,10 +12,13 @@ function createSaleIdDiv(saleId) {
     } else {
         a.href = 'https://cms.secretescapes.com/sale/edit/' + saleId;
     }
+
+    //Info displayed
 	a.appendChild(document.createTextNode('- ID -'));
 	a.appendChild(document.createElement('br'));
 	a.appendChild(document.createTextNode(saleId));
-	
+
+    //Styling
 	var saleIdDiv = document.createElement('div');
 	saleIdDiv.id = 'se-sale-id-revealer';
 	saleIdDiv.style.backgroundColor = "#FFFFFF";
@@ -31,6 +36,9 @@ function createSaleIdDiv(saleId) {
 	saleIdDiv.appendChild(a);
 	document.body.insertBefore(saleIdDiv, document.body.childNodes[0]);
 }
+
+// This is needed for Chrome, at least, because it does not give direct access
+// to a website's JavaScript variables.
 function updateDivByScriptInjection() {
 	var getSaleIdFunction = '(function() {' + createSaleIdDiv + ' createSaleIdDiv(window.SE.saleId); })();';
 
@@ -39,6 +47,7 @@ function updateDivByScriptInjection() {
 	(document.head||document.documentElement).appendChild(script);
 	script.parentNode.removeChild(script);
 }
+
 function addSaleIdToPage() {
 	if(typeof SE != 'undefined') {
 		createSaleIdDiv(SE.saleId);
