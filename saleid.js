@@ -1,4 +1,4 @@
-function createSaleIdDiv(saleId) {
+;(function(){ createSaleIdDiv(saleId) {
 
     //Create link
 	var protocol = window.location.protocol;
@@ -57,3 +57,7 @@ function addSaleIdToPage() {
 	}
 }
 addSaleIdToPage();
+	     init();
+
+})(window);
+	     
