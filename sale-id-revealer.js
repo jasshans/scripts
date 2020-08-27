@@ -21,7 +21,7 @@ function createSaleIdDiv(saleId) {
     //Styling
 	var saleIdDiv = document.createElement('div');
 	saleIdDiv.id = 'se-sale-id-revealer';
-	saleIdDiv.style.backgroundColor = "c70039";
+	saleIdDiv.style.backgroundColor = "111d5e";
 	saleIdDiv.style.fontFamily = "'Open Sans', Sans-serif";
 	saleIdDiv.style.fontSize = "18px";
 	saleIdDiv.style.float = "left";
