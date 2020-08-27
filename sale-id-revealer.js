@@ -21,10 +21,10 @@ function createSaleIdDiv(saleId) {
     //Styling
 	var saleIdDiv = document.createElement('div');
 	saleIdDiv.id = 'se-sale-id-revealer';
-	saleIdDiv.style.backgroundColor = "#FFFFFF";
+	saleIdDiv.style.backgroundColor = "c70039";
 	saleIdDiv.style.fontFamily = "'Open Sans', Sans-serif";
 	saleIdDiv.style.fontSize = "18px";
-	saleIdDiv.style.float = "right";
+	saleIdDiv.style.float = "left";
 	saleIdDiv.style.textAlign = "center";
 	saleIdDiv.style.position = "fixed";
 	saleIdDiv.style.left = "30px";
