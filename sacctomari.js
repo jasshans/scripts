@@ -2,7 +2,7 @@ function createAccountIdDiv(accountId) {
 
     //Create link
 	var protocol = window.location.protocol;
-	var url = window.location.hostname;
+	var url = window.location.hostname.pathname;
 	var a = document.createElement('a');
 
     if (url.indexOf('localhost') > -1) {
