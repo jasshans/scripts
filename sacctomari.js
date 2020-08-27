@@ -1,8 +1,8 @@
 function createSaleIdDiv(saleId) {
 
     //Create link
-	var protocol = window.location.port;
-	var url = window.location.hostname;
+	var protocol = window.location.protocol;
+	var url = window.location.port;
 	var a = document.createElement('a');
 
     if (url.indexOf('localhost') >= 0) {
