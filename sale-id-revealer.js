@@ -14,7 +14,7 @@ function createSaleIdDiv(saleId) {
     }
 
     //Info displayed
-	a.appendChild(document.createTextNode('- ID -'));
+	a.appendChild(document.createTextNode('Territory ID'));
 	a.appendChild(document.createElement('br'));
 	a.appendChild(document.createTextNode(saleId));
 
