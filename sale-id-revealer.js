@@ -24,7 +24,7 @@ function createSaleIdDiv(saleId) {
 	saleIdDiv.style.backgroundColor = "#FFFFFF";
 	saleIdDiv.style.fontFamily = "'Open Sans', Sans-serif";
 	saleIdDiv.style.fontSize = "18px";
-	saleIdDiv.style.float = "left";
+	saleIdDiv.style.float = "right";
 	saleIdDiv.style.textAlign = "center";
 	saleIdDiv.style.position = "fixed";
 	saleIdDiv.style.left = "30px";
