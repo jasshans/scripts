@@ -2,7 +2,7 @@ function createAccountIdDiv(accountId) {
 
     //Create link
 	var protocol = window.location.protocol;
-	var url = window.location.pathname;
+	var url = window.location.hostname;
 	var a = document.createElement('a');
 
     if (url.indexOf('localhost') >= 0) {
@@ -14,7 +14,7 @@ function createAccountIdDiv(accountId) {
     }
 
     //Info displayed
-	a.appendChild(document.createTextNode('- ID -'));
+	a.appendChild(document.createTextNode('Mari Link'));
 	a.appendChild(document.createElement('br'));
 	a.appendChild(document.createTextNode(accountId));
 
