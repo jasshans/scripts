@@ -5,7 +5,7 @@ function createAccountIdDiv(accountId) {
 	var url = window.location.hostname;
 	var a = document.createElement('a');
 
-    if (url.indexOf('localhost') >= 0) {
+    if (url.indexOf('https://secretescapes.my.salesforce.com/001') >= 0) {
         a.href = 'http://' + url + ':9090//mari/#/hotel/' + accountId;
     } else if (url.indexOf('staging') >= 0 || url.indexOf('uat') >= 0) {
         a.href = protocol + '//' + url + '/mari/#/hotel/' + accountId;
