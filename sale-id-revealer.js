@@ -6,11 +6,11 @@ function createSaleIdDiv(saleId) {
 	var a = document.createElement('a');
 
     if (url.indexOf('localhost') >= 0) {
-        a.href = 'http://' + url + ':9090/cms/hotelSale/Edit/' + saleId;
+        a.href = 'http://' + url + ':9090/cms/hotelSale/edit/' + saleId;
     } else if (url.indexOf('staging') >= 0 || url.indexOf('uat') >= 0) {
-        a.href = protocol + '//' + url + '/cms/hotelSale/Edit/' + saleId;
+        a.href = protocol + '//' + url + '/cms/hotelSale/edit/' + saleId;
     } else {
-        a.href = 'https://cms.secretescapes.com/hotelSale/Edit/' + saleId;
+        a.href = 'https://cms.secretescapes.com/hotelSale/edit/' + saleId;
     }
 
     //Info displayed
